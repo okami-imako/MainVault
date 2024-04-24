@@ -1,0 +1,1 @@
+Unit test is a [[Test|test]] that focuses on a single atomic component ([[Class|class]], [[Function|function]]). Usually that comes with [[Mock|mocking]] it's component's dependencies

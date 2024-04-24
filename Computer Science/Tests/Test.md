@@ -1,0 +1,1 @@
+Test is a piece of software that verifies the behavior of another piece of software

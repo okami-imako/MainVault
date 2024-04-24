@@ -1,0 +1,1 @@
+Tombstone is a message that signals that the record was deleted.

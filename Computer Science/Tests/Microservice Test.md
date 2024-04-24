@@ -1,0 +1,1 @@
+Test that tests a single [[Microservice|microservice]] as a whole, while [[Mock|mocking]] it's external dependencies on other microservices. ^7d25f7
