@@ -6,7 +6,7 @@ relates to:
 ---
 Generally you have some certain statements about your data (*invariants*) that must always be true.
 
-For example: transfer from one bank account to another shouldn't change the overall balance across accounts.
+>For example: transfer from one bank account to another shouldn't change the overall balance across accounts.
 
 Database allows creating [[Integrity Constraints|integrity constraints]] (NOT NULL, UNIQUE). If the data complies with integrity constraints, than it is integrant.
 

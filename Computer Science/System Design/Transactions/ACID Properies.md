@@ -2,7 +2,8 @@
 tags:
   - transactions/acid
 relates to:
-  - "[[Transactions]]"
+  - "[[Transaction]]"
+  - "[[Race Condition]]"
 ---
 The safety guarantees that transactions bring are often described as acronym ACID:
 - [[ACID - Atomicity|[A]tomicity]]
