@@ -1,7 +1,7 @@
 ---
 tags:
   - architecture
-  - distributed-system
+  - distributed-systems/problem
 relates to:
   - "[[Fault]]"
 ---
@@ -27,3 +27,20 @@ How long the timeout should be? Unclear
 # Network Congestion
 If several nodes at the same time try to send packets to the same destination - [[Network Switch]] has to queue them up and feed into the destination link one by one. If the switch's queue get's filled up - packets are dropped
 ![[NetworkCongestion.png]]
+
+There are 2 main approaches to delivering packets over the network:
+___
+Partition the bandwidth and dedicate a part of bandwidth to the communication canal. 
+
+Pros:
+- Guarantee on the delivery time
+- Reliable communication
+Cons:
+- If there are not many communications open, the network is underutilized
+___
+*bursty traffic* - let each packet take up the whole bandwidth and just queue them up.
+
+Pros:
+- Good network utilization
+Cons:
+- Unbounded delays due to the queuing time

@@ -1,7 +1,7 @@
 ---
 tags:
-  - distributed-system
   - architecture
+  - distributed-systems/problem
 ---
 One of the big ideas in building distributed systems is ***Building a Reliable System from Unreliable Components***
 
