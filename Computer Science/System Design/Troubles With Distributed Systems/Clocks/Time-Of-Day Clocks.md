@@ -11,5 +11,9 @@ For example, `clock_gettime(CLOCK_REALTIME)` on Linux and `System.currentTimeMil
 Time-of-day clocks are usually synchronized with [[NTP]], which means that a timestamp from one machine (ideally) means the same as a timestamp on another machine.
 
 # Problems
+- The quartz clock in a computer is not very accurate - it ***drifts*** 
 - If the local clock is too far ahead of the NTP server, it may be forcibly reset and appear to ***jump back*** to a previous point in time. These jumps, as well as the fact that they often ignore leap seconds, make time-of-day clocks ***unsuitable*** for measuring elapsed time.
 - Time-of-day clocks have also historically had quite a coarse-grained resolution, e.g., moving forward in steps of 10 ms on older Windows systems. On recent systems, this is less of a problem.
+- Some NTP servers are wrong and misconfigured
+- In [[Virtual Machine|virtual machines]] the hardware clock is virtualized
+- If you ran the software on the device you don't control (mobile app) - you can't trust the clock at all

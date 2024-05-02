@@ -4,7 +4,7 @@ tags:
 relates to:
   - "[[Unreliable Clocks]]"
 ---
-A ***monotonic clock*** is suitable for measuring a ***durarion*** (time interval), such as a timeout or a service’s response time: `clock_gettime(CLOCK_MONOTONIC)` on Linux and `System.nanoTime()` in Java are monotonic clocks, for example. The name comes from the fact that they are ***guaranteed*** to always ***move forward*** (whereas a [[Time-Of-Day Clocks]] may jump back in time).
+A ***monotonic clock*** is suitable for measuring a ***duration*** (time interval), such as a timeout or a service’s response time: `clock_gettime(CLOCK_MONOTONIC)` on Linux and `System.nanoTime()` in Java are monotonic clocks, for example. The name comes from the fact that they are ***guaranteed*** to always ***move forward*** (whereas a [[Time-Of-Day Clocks]] may jump back in time).
 
 The ***absolute time*** of such clock is ***meaningless***. 
 
