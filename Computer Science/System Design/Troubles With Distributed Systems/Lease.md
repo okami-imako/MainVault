@@ -2,7 +2,6 @@
 tags:
   - replication
 relates to:
-  - "[[Replication]]"
   - "[[Leader-Based Replication]]"
 ---
 How does a node know that it is still leader (that it hasn’t been declared dead by the others), and that it may safely accept writes?
@@ -33,6 +32,6 @@ There are many cases in which the process may be stopped and won't even know abo
 - [[Garbage Collection]]
 - In a virtualized environment, a virtual machine may be *suspended*
 - Laptop's lead can be closed
-- [[Context-Switch]]
-- Synchronoze disk access
+- [[Context Switch]]
+- Synchronize disk access
 - SIGSTOP - SIGCONT

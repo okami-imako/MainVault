@@ -4,6 +4,8 @@ tags:
 relates to:
   - "[[ACID - Isolation]]"
 ---
+![[Serializability]]
+
 In theory ***serializable*** isolation level shouldn't allow ***any*** anomalies.
 
 It guarantees that even though transactions may execute in parallel, the end result is the same as if they had executed *serially* - no [[Race Condition|race conditions]]

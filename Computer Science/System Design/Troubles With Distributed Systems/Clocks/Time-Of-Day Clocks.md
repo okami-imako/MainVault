@@ -6,7 +6,7 @@ relates to:
 ---
 A ***time-of-day clock*** does what you intuitively expect of a clock: it returns the ***current date and time*** according to some calendar (also known as wall-clock time). 
 
-For example, `clock_gettime(CLOCK_REALTIME)` on Linux and `System.currentTimeMillis()` in Java return the number of seconds (or milliseconds) since the epoch: ***midnight UTC on January 1, 1970***, according to the Gregorian calendar, not counting leap sec‐ onds. Some systems use other dates as their reference point.
+For example, `clock_gettime(CLOCK_REALTIME)` on Linux and `System.currentTimeMillis()` in Java return the number of seconds (or milliseconds) since the epoch: ***midnight UTC on January 1, 1970***, according to the Gregorian calendar, not counting leap seconds. Some systems use other dates as their reference point.
 
 Time-of-day clocks are usually synchronized with [[NTP]], which means that a timestamp from one machine (ideally) means the same as a timestamp on another machine.
 

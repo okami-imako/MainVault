@@ -6,5 +6,7 @@ Say you have a database with a [[Leader-Based Replication|single leader]] per pa
 
 ![[Lease]]
 
+## Similar Problem:
+![[DistributedLock.png]]
 
-
+Solution - [[Fencing Token]]
