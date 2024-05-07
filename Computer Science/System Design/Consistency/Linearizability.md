@@ -8,6 +8,8 @@ The idea behind ***linearizability*** is to make a system appear as if there wer
 
 ***Linearizability*** is a recency guarantee on reads and writes of a register (an individual object). It doesn’t group operations together into [[Transaction|transactions]], so it does not prevent problems such as [[Write Skew]], unless you take additional measures.
 
+In a ***linearizable system***, we have a ***[[Total Order]]*** of operations: for any two operations we can always say which one happened first
+
 # Example
 ![[Linearizability.png]]
 - First client B sent a request to read x, then client D sent a request to set x to 0, and then client A sent a request to set x to 1. Nevertheless, the value returned to B’s read is 1 (the value written by A). This is okay: it means that the database ***first*** processed D’s write, ***then*** A’s write, and ***finally*** B’s read. Although this is not the order in which the requests were sent, it’s an acceptable order, because the three requests are [[Concurrency|concurrent]]. Perhaps B’s read request was slightly delayed in the network, so it only reached the database after the two writes.
