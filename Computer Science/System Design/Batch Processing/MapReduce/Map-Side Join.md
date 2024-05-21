@@ -1,6 +1,6 @@
 ---
 tags:
-  - map-reduce
+  - batch-processing/map-reduce
 relates to:
   - "[[MapReduce]]"
 ---
@@ -24,7 +24,7 @@ If both datasets that are being joined are [[Partitioning|partitioned]] in the s
 
 This has the advantage that each mapper can load a smaller amount of data into its *hash table*
 
-# Map-Side Merge joins
+# Sort-Merge joins
 If the input datasets are both ***partitioned*** in the same way and ***sorted*** based on the same key, it does not matter whether the inputs are small enough to fit in memory, because a ***mapper*** can perform the same merging operation that would normally be done by a reducer: reading both input files incrementally, in order of ascending key, and matching records with the same key.
 
 If a ***map-side merge join*** is possible, it probably means that prior MapReduce jobs brought the input datasets into this partitioned and sorted form in the first place. In principle, this join could have been performed in the ***reduce stage of the prior job***.

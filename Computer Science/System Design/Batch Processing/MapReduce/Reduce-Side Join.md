@@ -1,6 +1,6 @@
 ---
 tags:
-  - map-reduce
+  - batch-processing/map-reduce
 relates to:
   - "[[MapReduce]]"
 ---

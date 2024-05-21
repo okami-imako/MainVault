@@ -1,8 +1,8 @@
 ---
 tags:
-  - concept
+  - batch-processing/map-reduce
 ---
-***MapReduce*** is a programming [[Framework]] used to write code to process large datasets in a distributed filesystem
+***MapReduce*** is a programming [[Framework]] used to write code to process large datasets in a distributed filesystem - [[Batch Processing]]
 
 The pattern of data processing looks like this:
 1) Call the ***mapper*** function to extract a ***key*** and ***value*** from each input ***record***
@@ -25,7 +25,6 @@ The key-value pairs must be sorted, but the dataset is likely too large to be so
 # Reducer
 ___
 The MapReduce framework takes the key-value pairs produced by the mappers, collects all the values belonging to the same key, and calls the reducer with an iterator over that collection of values. The reducer can produce output records (such as the number of occurrences of the same URL).
-
 # Example
 ___
 Here is an example MapReduce workflow from Hadoop
@@ -33,4 +32,6 @@ Here is an example MapReduce workflow from Hadoop
 
 # Big Ideas
 ___
-- MapReduce programming model has separated the physical network communication aspect from the application logic. It shields the application code from having to worry about partial failures, such as the crash of another node.
+- MapReduce programming model has separated the physical network communication aspect from the application logic. It shields the application code from having to worry about partial [[Failure|failures]], such as the crash of another node.
+- The MapReduce job is a [[Pure Function]], meaning that it doesn't modify input, has no side-effects like writing to the external db
+- Input of the batch job is often just a distributed file system. With that approach you can just dump the data without thinking ahead about a perfect data model. Later it becomes more clear how to interpret the data to gain meaningful insights via running batch job against it. Moreover the same raw data can be interpreted differently by different batch jobs 
