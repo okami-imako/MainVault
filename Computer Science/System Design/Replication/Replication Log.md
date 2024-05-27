@@ -3,7 +3,9 @@ tags:
   - replication
   - concept
 ---
-Replication Log is a log maintained by the leader that the followers use to receive updates
+***Replication Log*** is a [[Log]] maintained by the leader that the followers use to receive updates
+
+***Replication Log*** is in fact a [[stream]] of database write events, produces by the leader as it processes transactions. The followers apply that stream of writes to their own copy of the database and thus end up with an accurate copy of the same data. - [[Stream Processing]]
 
 # Statement-based replication
 
