@@ -17,7 +17,7 @@ A piece of data in ***stream processing*** system is called [[Event]]. An ***eve
 
 Related ***events*** are usually grouped together into [[Topic|topics]]
 
-## Uses of Stream Processing
+# Uses of Stream Processing
 ---
 - ***Complex event processing*** - ***CEP*** allows you to specify rules to search for certain patterns of events in a stream, similar to [[Regular Expression|regexp]]
 - ***Stream analytics*** - Kinda like ***CEP***, but is more oriented toward aggregation and statistical metrics over a large number of events
