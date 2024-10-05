@@ -12,7 +12,6 @@ tags:
 | Leadership                | Was promoted to tech lead                                                                              |
 | Conflicts                 | Architect was breaking the established processes. Went directly to the devs and asked to take on tasks |
 | What You'd Do Differently | Establish processes, would ask about motivation system upfront before joining                          |
-
 # Common Questions
 ## Tell us about your current position
 Right now I work at Samsung as backend tech lead. Our project is connected with the ***SmartThings*** smart home application. The problem we are trying to solve is connected with the process of certifying partners' devices. Right now it looks like this:

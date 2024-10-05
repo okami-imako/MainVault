@@ -17,7 +17,7 @@ relates to:
 ---
 1) Partition disks using `cfdisk`
 Suggested partition table:
-![_img/partition-table.png]
+![[partition-table.png]]
 2) Format the partitions
 ```bash
 mkfs.ext4 /dev/root_partition

@@ -1,4 +1,3 @@
-
 set clipboard=unnamed
 
 nmap <F9> :nohl
@@ -8,6 +7,9 @@ nmap k gk
 
 nmap H ^
 nmap L $
+
+vmap J :m '>+1<CR>gv=gv
+vmap K :m '<-2<CR>gv=gv
 
 nmap <C-d> <C-d>zz
 nmap <C-u> <C-u>zz
